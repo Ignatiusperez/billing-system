@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+input[type="tel"], input[type="hidden"] {
+    padding: 12px;
+    margin: 20px 0;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.glow-on-hover {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: glowing 1.5s infinite alternate;
+    margin-top: 10px;
+}
+
+.glow-on-hover:hover {
+    transform: scale(1.05);
+}
+
+@keyframes glowing {
+    from { box-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 15px #4CAF50; }
+    to { box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #ff00de; }
+}
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.package-btn {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #2196F3;
+}
