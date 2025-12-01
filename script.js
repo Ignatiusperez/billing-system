@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 3000;
 // CAPTURE USER'S IP ADDRESS
 document.addEventListener('DOMContentLoaded', function() {
     fetch('https://api.ipify.org?format=json')
